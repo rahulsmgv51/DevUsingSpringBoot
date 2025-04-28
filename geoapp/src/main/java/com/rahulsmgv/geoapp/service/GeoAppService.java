@@ -13,6 +13,7 @@ import com.rahulsmgv.geoapp.entity.UserEntity;
 import com.rahulsmgv.geoapp.repository.GeoAppRepository;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.transaction.annotation.Transactional;
 
 @Slf4j
 @Component
@@ -21,7 +22,8 @@ public class GeoAppService {
 	private GeoAppRepository geoAppRepository;
 	@Autowired
 	private UserService userService;
-	
+
+	@Transactional
 	public void saveEntry(GeoAppEntity geoAppEntity, String userName) {
 		log.info("Request Sent to User Details Service for finding the data of a specific user_"+userName);;
 		UserEntity userEntity = userService.findByUsername(userName);
