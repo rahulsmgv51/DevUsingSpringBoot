@@ -1,5 +1,6 @@
 package com.rahulsmgv.geoapp.controller;
 
+import java.time.Clock;
 import java.util.List;
 import java.util.Optional;
 import java.awt.desktop.UserSessionEvent;
@@ -63,6 +64,7 @@ public class GeoAppController {
 			log.info("Response Sent to User of Newly Created Entity");
 			return new ResponseEntity<GeoAppEntity>(createEntity, HttpStatus.CREATED);
 		} catch (Exception e) {
+			System.out.println(e);
 			return new ResponseEntity<GeoAppEntity>(HttpStatus.BAD_REQUEST);
 		}
 		
@@ -93,8 +95,8 @@ public class GeoAppController {
 		try {
 			GeoAppEntity oldData = geoAppService.getById(geoAppId).orElse(null);
 			if(oldData != null) {
-				oldData.setContent(geoAppUpdateEntity.getContent() != null && !geoAppUpdateEntity.getContent().equals("")? geoAppUpdateEntity.getContent():oldData.getContent());
-				oldData.setTitle(geoAppUpdateEntity.getTitle() != null && !geoAppUpdateEntity.getTitle().equals("")? geoAppUpdateEntity.getTitle():oldData.getTitle());
+				oldData.setContent(geoAppUpdateEntity.getContent() != null && !geoAppUpdateEntity.getContent().isEmpty() ? geoAppUpdateEntity.getContent():oldData.getContent());
+				oldData.setTitle(!geoAppUpdateEntity.getTitle().isEmpty() ? geoAppUpdateEntity.getTitle():oldData.getTitle());
 				geoAppService.saveEntry(oldData);
 				log.info("Response Sent to User afte update the data "+ oldData);
 				return new ResponseEntity<>(oldData, HttpStatus.ACCEPTED);

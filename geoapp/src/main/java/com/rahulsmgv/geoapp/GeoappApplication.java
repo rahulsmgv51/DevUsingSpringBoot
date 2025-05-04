@@ -16,8 +16,8 @@ public class GeoappApplication {
 		SpringApplication.run(GeoappApplication.class, args);
 	}
 
-	@Bean
-	public PlatformTransactionManager add(MongoDatabaseFactory dbFactory){
+    @Bean
+    PlatformTransactionManager add(MongoDatabaseFactory dbFactory){
 		return new MongoTransactionManager(dbFactory);
 	}
 }

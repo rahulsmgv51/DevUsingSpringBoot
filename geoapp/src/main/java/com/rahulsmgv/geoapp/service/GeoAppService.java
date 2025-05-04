@@ -23,23 +23,29 @@ public class GeoAppService {
 	@Autowired
 	private UserService userService;
 
-	@Transactional
+	/*@Transactional  Transaction numbers are only allowed on a replica set member or mongos due to which comment-in Transactional annotation*/
+
 	public void saveEntry(GeoAppEntity geoAppEntity, String userName) {
-		log.info("Request Sent to User Details Service for finding the data of a specific user_"+userName);;
-		UserEntity userEntity = userService.findByUsername(userName);
-		log.info("Response Received from User Details Service of a specific user details "+userEntity.toString());
-		
-		log.info("Request Sent to GeoApp Entity Service for insert new a Record_"+ geoAppEntity.toString());
-		geoAppEntity.setDate(LocalDateTime.now());
-		GeoAppEntity saved = geoAppRepository.save(geoAppEntity);
-		log.info("Response Received From GeoApp Entity Service After Inserting a new Record_"+saved.toString());
-		
-		log.info("Request Sent to UserEntity Service for add record in geoappEntities List_"+saved.toString());
-		userEntity.getGeoappEntities().add(saved);
-		log.info("Response Received from UserEnitity Service after adding record in geoappEntities List");
-		
-		log.info("Request Sent to UserEntity Service for update user details after adding record in geoappEntities List");
-		userService.saveEntry(userEntity);
+		try {
+			log.info("Request Sent to User Details Service for finding the data of a specific user_"+userName);;
+			UserEntity userEntity = userService.findByUsername(userName);
+			log.info("Response Received from User Details Service of a specific user details "+userEntity.toString());
+
+			log.info("Request Sent to GeoApp Entity Service for insert new a Record_"+ geoAppEntity.toString());
+			geoAppEntity.setDate(LocalDateTime.now());
+			GeoAppEntity saved = geoAppRepository.save(geoAppEntity);
+			log.info("Response Received From GeoApp Entity Service After Inserting a new Record_"+saved.toString());
+
+			log.info("Request Sent to UserEntity Service for add record in geoappEntities List_"+saved.toString());
+			userEntity.getGeoappEntities().add(saved);
+			log.info("Response Received from UserEnitity Service after adding record in geoappEntities List");
+
+			log.info("Request Sent to UserEntity Service for update user details after adding record in geoappEntities List");
+			userService.saveEntry(userEntity);
+		}catch (Exception e){
+			System.out.println(e);
+			throw new RuntimeException("Exception Occurred while inserting new record in GeoApp Service " , e);
+		}
 	}
 	
 	public void saveEntry(GeoAppEntity geoAppEntity) {
