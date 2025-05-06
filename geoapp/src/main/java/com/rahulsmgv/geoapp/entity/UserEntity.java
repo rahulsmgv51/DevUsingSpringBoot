@@ -2,7 +2,7 @@ package com.rahulsmgv.geoapp.entity;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import lombok.Builder;
 import lombok.*;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
@@ -13,8 +13,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.mongodb.lang.NonNull;
 
+@Builder
 @Data
-@NoArgsConstructor
+//@NoArgsConstructor
 @Document(collection = "users_details")
 public class UserEntity {
 	
