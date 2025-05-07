@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: geoapp
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: geoappdb
+      auto-index-creation: true
+server:
+  port: 8081
+  context-path: /restapi
