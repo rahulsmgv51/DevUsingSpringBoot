@@ -1,9 +1,13 @@
 package com.rahulsmgv.geoapp.controller;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.rahulsmgv.geoapp.pojo.SystemInfoRequest;
+import com.rahulsmgv.geoapp.service.SystemInfoService;
+import com.rahulsmgv.geoapp.service.WeatherService;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,9 +20,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.rahulsmgv.geoapp.entity.GeoAppEntity;
 import com.rahulsmgv.geoapp.entity.UserEntity;
-import com.rahulsmgv.geoapp.repository.UserRepository;
 import com.rahulsmgv.geoapp.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -90,6 +92,26 @@ public class UserController {
 			log.info("Exception Occured while updating userpassword "+ e.getMessage());
 		}
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+	}
+
+	@Autowired
+	WeatherService weatherService;
+
+	@GetMapping("/city")
+	public ResponseEntity<?> weatherCityInfo(){
+		log.info("Fetch City Details");
+		return new ResponseEntity<>(weatherService.getWeather("London"), HttpStatus.OK);
+	}
+
+	@Autowired
+	SystemInfoService systemInfoService;
+	private final ObjectMapper objectMapper = new ObjectMapper();
+
+	@PostMapping("/system/info")
+	public ResponseEntity<?> systemInfo(@RequestBody SystemInfoRequest systemInfoRequest) throws JsonProcessingException {
+		String json = objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(systemInfoRequest);
+		log.info("Request Received from User for Fetching System Details {} ", json);
+		return new ResponseEntity<>(systemInfoService.getSystemInfo(systemInfoRequest), HttpStatus.OK);
 	}
 	
 }

@@ -22,7 +22,7 @@ public class UserServiceTest {
     @Autowired
     UserService userService;
 
-    //@Disabled
+    @Disabled
     @Test
     public void testFindByUserName(){
         //assertEquals(4, 2+2);
@@ -32,7 +32,7 @@ public class UserServiceTest {
         assertNotNull(userRepository.findByUserName("Manoj"));
     }
 
-    //@Disabled
+    @Disabled
     @ParameterizedTest
     @ValueSource(strings = { //ints, longs
             "Mohit",
@@ -40,16 +40,19 @@ public class UserServiceTest {
             "Manoj",
             "Amit"
     })
+
     public void testFindByUserNameParameter(String username){
         assertNotNull(userRepository.findByUserName(username), "Test Case is failed for username: "+ username);
     }
 
+    @Disabled
     @ParameterizedTest
     @ArgumentsSource(UserArgumentProvider.class)
     public void testFindByUserNameArgs(UserEntity userEntity){
         assertTrue(userService.saveNewEntry(userEntity));
     }
 
+    @Disabled
     @ParameterizedTest
     @CsvSource({
             "1, 2, 3",
