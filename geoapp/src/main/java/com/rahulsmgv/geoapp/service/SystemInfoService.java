@@ -19,13 +19,10 @@ public class SystemInfoService {
     @Autowired
     private RestTemplate restTemplatePost;
 
-    @Value("${system-info.api.url}")
-    private String URL;
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    public SystemInfoService(String url) {
-        URL = url;
-    }
+    @Value("${system-info.api.url}")
+    private String URL;
 
     public SystemInfoResponsePOJO getSystemInfo(SystemInfoRequest systemInfoRequest) throws JsonProcessingException {
 

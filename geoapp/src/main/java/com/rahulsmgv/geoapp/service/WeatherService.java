@@ -1,5 +1,7 @@
 package com.rahulsmgv.geoapp.service;
 
+import com.rahulsmgv.geoapp.cache.AppCache;
+import com.rahulsmgv.geoapp.placeholders.ConstantData;
 import com.rahulsmgv.geoapp.pojo.SystemInfoRequest;
 import com.rahulsmgv.geoapp.pojo.SystemInfoResponsePOJO;
 import com.rahulsmgv.geoapp.pojo.WeatherResponsePOJO;
@@ -23,9 +25,12 @@ public class WeatherService {
     @Value("${weather.api.key}")
     private String API_KEY;
 
+    @Autowired
+    AppCache configCache;
+
     public WeatherResponsePOJO getWeather(String city) {
-        String finalAPI = URL.replace("API_KEY", "").replace("CITY", city);
-        //ResponseEntity<WeatherResponsePOJO> response = restTemplate.getForEntity(URL, WeatherResponsePOJO.class);
+        String finalAPI = configCache.appCache.get(AppCache.keys.weatherapi.toString()).replace(ConstantData.API_KEY, API_KEY).replace(ConstantData.CITY, city);
+        /*ResponseEntity<WeatherResponsePOJO> response = restTemplate.getForEntity(URL, WeatherResponsePOJO.class); */
         ResponseEntity<WeatherResponsePOJO> response = restTemplate.exchange(finalAPI, HttpMethod.GET, null, WeatherResponsePOJO.class);
         return response.getBody();
     }

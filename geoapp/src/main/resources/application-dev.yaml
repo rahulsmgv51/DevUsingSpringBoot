@@ -8,7 +8,7 @@ spring:
       database: geoappdb
       auto-index-creation: true
 server:
-  port: 8080
+  port: 8081
 
 system-info:
   api:
@@ -17,4 +17,4 @@ system-info:
 weather:
   api:
     url: "http://api.weatherapi.com/v1/current.json?key=API_KEY&q=CITY&aqi=yes"
-    key: ""
+    key: "***************************"

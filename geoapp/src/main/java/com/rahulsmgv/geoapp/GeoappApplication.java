@@ -9,8 +9,10 @@ import org.springframework.core.env.ConfigurableEnvironment;
 //import org.springframework.data.mongodb.MongoTransactionManager;
 //import org.springframework.transaction.PlatformTransactionManager;
 //import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.client.RestTemplate;
 
+@EnableScheduling
 @SpringBootApplication
 //@EnableTransactionManagement
 public class GeoappApplication {

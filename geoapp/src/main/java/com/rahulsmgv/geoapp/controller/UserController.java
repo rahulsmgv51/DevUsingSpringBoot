@@ -28,7 +28,7 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("/geo/app/user")
 public class UserController {
-	
+	private final ObjectMapper objectMapper = new ObjectMapper();
 	@Autowired
 	private UserService userService;
 	
@@ -105,7 +105,6 @@ public class UserController {
 
 	@Autowired
 	SystemInfoService systemInfoService;
-	private final ObjectMapper objectMapper = new ObjectMapper();
 
 	@PostMapping("/system/info")
 	public ResponseEntity<?> systemInfo(@RequestBody SystemInfoRequest systemInfoRequest) throws JsonProcessingException {
