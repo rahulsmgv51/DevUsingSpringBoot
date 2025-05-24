@@ -7,6 +7,9 @@ spring:
       port: 27017
       database: geoappdb
       auto-index-creation: true
+  redis:
+    host: localhost
+    port: 6379
 server:
   port: 8081
 
