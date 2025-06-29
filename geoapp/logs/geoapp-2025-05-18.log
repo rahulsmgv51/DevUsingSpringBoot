@@ -1,0 +1,677 @@
+2025-05-18 10:21:11 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 688 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 10:21:11 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 10:21:11 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 10:21:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 10:21:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 138 ms. Found 2 MongoDB repository interfaces.
+2025-05-18 10:21:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 10:21:14 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2848 ms
+2025-05-18 10:21:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-18 10:21:16 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Started GeoappApplication in 6.492 seconds (process running for 8.965)
+2025-05-18 10:21:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-18 10:21:22 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-05-18 10:21:22 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-05-18 10:21:44 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-18 10:21:44 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-18 10:21:48 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 4064 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 10:21:48 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 10:21:48 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 10:21:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 10:21:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 116 ms. Found 2 MongoDB repository interfaces.
+2025-05-18 10:21:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 10:21:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2442 ms
+2025-05-18 10:21:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-18 10:21:52 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Started GeoappApplication in 5.504 seconds (process running for 6.965)
+2025-05-18 10:21:57 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-18 10:21:57 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-05-18 10:21:58 [http-nio-8080-exec-2] INFO  c.r.geoapp.controller.UserController - Fetch System Details
+2025-05-18 10:22:43 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.web.client.ResourceAccessException: I/O error on POST request for "https://api.restful-api.dev/objects": Connection timed out: connect] with root cause
+java.net.ConnectException: Connection timed out: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:593)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:174)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:266)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:380)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+	at org.springframework.http.client.SimpleClientHttpRequest.executeInternal(SimpleClientHttpRequest.java:79)
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:71)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:81)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:900)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:683)
+	at com.rahulsmgv.geoapp.service.SystemInfoService.getSystemInfo(SystemInfoService.java:21)
+	at com.rahulsmgv.geoapp.controller.UserController.systemInfo(UserController.java:110)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-05-18 10:25:27 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-18 10:25:27 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-18 10:29:53 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 19240 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 10:29:53 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 10:29:53 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 10:29:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 10:29:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135 ms. Found 2 MongoDB repository interfaces.
+2025-05-18 10:29:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 10:29:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3010 ms
+2025-05-18 10:29:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-18 10:29:59 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Started GeoappApplication in 6.64 seconds (process running for 8.204)
+2025-05-18 10:30:38 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-18 10:30:38 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-05-18 10:30:38 [http-nio-8080-exec-2] INFO  c.r.geoapp.controller.UserController - Fetch System Details
+2025-05-18 10:31:56 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-18 10:31:56 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-18 10:45:55 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 10136 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 10:45:55 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 10:45:55 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 10:45:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 10:45:56 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 140 ms. Found 2 MongoDB repository interfaces.
+2025-05-18 10:45:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 10:45:57 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2806 ms
+2025-05-18 10:46:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-18 10:46:00 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Started GeoappApplication in 6.26 seconds (process running for 7.879)
+2025-05-18 10:46:04 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-18 10:46:04 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-05-18 10:46:04 [http-nio-8080-exec-2] INFO  c.r.geoapp.controller.UserController - Request Received from User for Fetching System Details SystemInfoRequest(name=Apple MacBook Pro 16, obj=null) 
+2025-05-18 10:46:45 [http-nio-8080-exec-2] INFO  c.r.geoapp.service.SystemInfoService - Response received from System information, SystemInfoResponsePOJO(id=ff808181932badb60196e1d2b27235b0, name=Apple MacBook Pro 16, createdAt=2025-05-18T05:16:44.018+00:00, data=null)
+2025-05-18 10:46:54 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-18 10:46:54 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-18 10:49:53 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 1692 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 10:49:53 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 10:49:53 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 10:49:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 10:49:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117 ms. Found 2 MongoDB repository interfaces.
+2025-05-18 10:49:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 10:49:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2451 ms
+2025-05-18 10:49:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-18 10:49:57 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Started GeoappApplication in 5.509 seconds (process running for 6.997)
+2025-05-18 10:50:41 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-18 10:50:41 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-05-18 10:50:41 [http-nio-8080-exec-2] INFO  c.r.geoapp.controller.UserController - Request Received from User for Fetching System Details SystemInfoRequest(name=Apple MacBook Pro 16, data=com.rahulsmgv.geoapp.pojo.SystemInfoRequest$Data@37de8ad1) 
+2025-05-18 10:51:40 [http-nio-8080-exec-2] INFO  c.r.geoapp.service.SystemInfoService - Response received from System information, SystemInfoResponsePOJO(id=ff808181932badb60196e1d733ac35b2, name=Apple MacBook Pro 16, createdAt=2025-05-18T05:21:39.244+00:00, data=com.rahulsmgv.geoapp.pojo.SystemInfoResponsePOJO$Data@66a0cb2)
+2025-05-18 10:52:20 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-18 10:52:20 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-18 11:13:15 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 14844 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 11:13:15 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 11:13:15 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 11:13:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 11:13:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 181 ms. Found 2 MongoDB repository interfaces.
+2025-05-18 11:13:18 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 11:13:18 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2992 ms
+2025-05-18 11:13:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-18 11:13:20 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Started GeoappApplication in 6.096 seconds (process running for 7.27)
+2025-05-18 11:13:27 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-18 11:13:27 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-05-18 11:13:27 [http-nio-8080-exec-1] INFO  c.r.geoapp.controller.UserController - Request Received from User for Fetching System Details {
+  "name" : "Apple MacBook Pro 16",
+  "data" : {
+    "year" : 2019,
+    "price" : 1849.99,
+    "CPU model" : "Intel Core i9",
+    "Hard disk size" : "1 TB"
+  }
+} 
+2025-05-18 11:13:29 [http-nio-8080-exec-1] INFO  c.r.geoapp.service.SystemInfoService - Response received from System information, {
+  "headers" : {
+    "Date" : [ "Sun, 18 May 2025 05:43:28 GMT" ],
+    "Content-Type" : [ "application/json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Connection" : [ "keep-alive" ],
+    "Server" : [ "cloudflare" ],
+    "Nel" : [ "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}" ],
+    "Vary" : [ "Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers" ],
+    "Cf-Cache-Status" : [ "DYNAMIC" ],
+    "Report-To" : [ "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=GMefukT5qpKTmxBV3hN%2BVM54UX6ckn%2BxYa3cuFqMP0cGVkpCmevAbPtUtybtHwLy6cVk8ZywA2VYbA13105Hj%2FjQiZUkAynF0zjDu6Ar4mCEYz0%3D\"}]}" ],
+    "CF-RAY" : [ "94190981aed04e6c-FRA" ],
+    "alt-svc" : [ "h3=\":443\"; ma=86400" ]
+  },
+  "body" : {
+    "id" : "ff808181932badb60196e1eb2db235b7",
+    "name" : "Apple MacBook Pro 16",
+    "data" : {
+      "year" : 2019,
+      "price" : 1849.99,
+      "CPU model" : "Intel Core i9",
+      "Hard disk size" : "1 TB"
+    },
+    "createdAt" : "2025-05-18T05:43:28.434+00:00"
+  },
+  "statusCode" : "OK",
+  "statusCodeValue" : 200
+}
+2025-05-18 11:13:53 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-18 11:13:53 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-18 14:11:17 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 6776 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 14:11:17 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 14:11:17 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 14:11:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 14:11:19 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 143 ms. Found 2 MongoDB repository interfaces.
+2025-05-18 14:11:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 14:11:20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2940 ms
+2025-05-18 14:11:22 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static java.lang.String com.rahulsmgv.geoapp.service.SystemInfoService.URL
+2025-05-18 14:11:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-18 14:11:22 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Started GeoappApplication in 6.108 seconds (process running for 7.272)
+2025-05-18 14:11:26 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-18 14:11:26 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-05-18 14:11:26 [http-nio-8080-exec-2] INFO  c.r.geoapp.controller.UserController - Request Received from User for Fetching System Details {
+  "name" : "Apple MacBook Pro 16",
+  "data" : {
+    "year" : 2019,
+    "price" : 1849.99,
+    "CPU model" : "Intel Core i9",
+    "Hard disk size" : "1 TB"
+  }
+} 
+2025-05-18 14:11:26 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: URI is not absolute] with root cause
+java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.fromURI(URL.java:721)
+	at java.base/java.net.URI.toURL(URI.java:1139)
+	at org.springframework.http.client.SimpleClientHttpRequestFactory.createRequest(SimpleClientHttpRequestFactory.java:142)
+	at org.springframework.http.client.support.HttpAccessor.createRequest(HttpAccessor.java:124)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:884)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:683)
+	at com.rahulsmgv.geoapp.service.SystemInfoService.getSystemInfo(SystemInfoService.java:29)
+	at com.rahulsmgv.geoapp.controller.UserController.systemInfo(UserController.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-05-18 14:12:00 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-18 14:12:00 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-18 14:12:04 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 10996 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 14:12:04 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 14:12:04 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 14:12:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 14:12:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 132 ms. Found 2 MongoDB repository interfaces.
+2025-05-18 14:12:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 14:12:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2417 ms
+2025-05-18 14:12:07 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static java.lang.String com.rahulsmgv.geoapp.service.SystemInfoService.URL
+2025-05-18 14:12:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-18 14:12:08 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Started GeoappApplication in 5.195 seconds (process running for 6.239)
+2025-05-18 14:12:15 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-18 14:12:15 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-05-18 14:12:15 [http-nio-8080-exec-1] INFO  c.r.geoapp.controller.UserController - Request Received from User for Fetching System Details {
+  "name" : "Apple MacBook Pro 16",
+  "data" : {
+    "year" : 2019,
+    "price" : 1849.99,
+    "CPU model" : "Intel Core i9",
+    "Hard disk size" : "1 TB"
+  }
+} 
+2025-05-18 14:12:15 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: URI is not absolute] with root cause
+java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.fromURI(URL.java:721)
+	at java.base/java.net.URI.toURL(URI.java:1139)
+	at org.springframework.http.client.SimpleClientHttpRequestFactory.createRequest(SimpleClientHttpRequestFactory.java:142)
+	at org.springframework.http.client.support.HttpAccessor.createRequest(HttpAccessor.java:124)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:884)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:683)
+	at com.rahulsmgv.geoapp.service.SystemInfoService.getSystemInfo(SystemInfoService.java:29)
+	at com.rahulsmgv.geoapp.controller.UserController.systemInfo(UserController.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-05-18 14:15:52 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-18 14:15:52 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-18 14:15:58 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 23360 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 14:15:58 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 14:15:58 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 14:16:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 14:16:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 139 ms. Found 2 MongoDB repository interfaces.
+2025-05-18 14:16:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 14:16:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2607 ms
+2025-05-18 14:16:02 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static java.lang.String com.rahulsmgv.geoapp.service.SystemInfoService.URL
+2025-05-18 14:16:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-18 14:16:03 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Started GeoappApplication in 5.535 seconds (process running for 6.563)
+2025-05-18 14:16:17 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-18 14:16:17 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-05-18 14:16:18 [http-nio-8080-exec-2] INFO  c.r.geoapp.controller.UserController - Request Received from User for Fetching System Details {
+  "name" : "Apple MacBook Pro 16",
+  "data" : {
+    "year" : 2019,
+    "price" : 1849.99,
+    "CPU model" : "Intel Core i9",
+    "Hard disk size" : "1 TB"
+  }
+} 
+2025-05-18 14:16:18 [http-nio-8080-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: URI is not absolute] with root cause
+java.lang.IllegalArgumentException: URI is not absolute
+	at java.base/java.net.URL.fromURI(URL.java:721)
+	at java.base/java.net.URI.toURL(URI.java:1139)
+	at org.springframework.http.client.SimpleClientHttpRequestFactory.createRequest(SimpleClientHttpRequestFactory.java:142)
+	at org.springframework.http.client.support.HttpAccessor.createRequest(HttpAccessor.java:124)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:884)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:683)
+	at com.rahulsmgv.geoapp.service.SystemInfoService.getSystemInfo(SystemInfoService.java:29)
+	at com.rahulsmgv.geoapp.controller.UserController.systemInfo(UserController.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-05-18 14:16:27 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-18 14:16:28 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-18 14:16:34 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 4060 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 14:16:34 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 14:16:35 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 14:16:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 14:16:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 137 ms. Found 2 MongoDB repository interfaces.
+2025-05-18 14:16:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 14:16:37 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2406 ms
+2025-05-18 14:16:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-18 14:16:39 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Started GeoappApplication in 5.234 seconds (process running for 6.296)
+2025-05-18 14:16:43 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-18 14:16:43 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-05-18 14:16:44 [http-nio-8080-exec-2] INFO  c.r.geoapp.controller.UserController - Request Received from User for Fetching System Details {
+  "name" : "Apple MacBook Pro 16",
+  "data" : {
+    "year" : 2019,
+    "price" : 1849.99,
+    "CPU model" : "Intel Core i9",
+    "Hard disk size" : "1 TB"
+  }
+} 
+2025-05-18 14:16:46 [http-nio-8080-exec-2] INFO  c.r.geoapp.service.SystemInfoService - Response received from System information, {
+  "headers" : {
+    "Date" : [ "Sun, 18 May 2025 08:46:46 GMT" ],
+    "Content-Type" : [ "application/json" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "Connection" : [ "keep-alive" ],
+    "Server" : [ "cloudflare" ],
+    "Nel" : [ "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}" ],
+    "Vary" : [ "Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers" ],
+    "Cf-Cache-Status" : [ "DYNAMIC" ],
+    "Report-To" : [ "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=vNUxN23vtsiJkHsO0ZacDUBN62EF9%2BwfAOpSjmMZhPURUKr859tfQujhcgMsAvEle7NQhBgwcokAlC9D99wAvEtXce8WsQxXrVuTdOmMXSdfCJg%3D\"}]}" ],
+    "CF-RAY" : [ "941a16017f7c001d-LHR" ],
+    "alt-svc" : [ "h3=\":443\"; ma=86400" ]
+  },
+  "body" : {
+    "id" : "ff808181932badb60196e292fda236f4",
+    "name" : "Apple MacBook Pro 16",
+    "data" : {
+      "year" : 2019,
+      "price" : 1849.99,
+      "CPU model" : "Intel Core i9",
+      "Hard disk size" : "1 TB"
+    },
+    "createdAt" : "2025-05-18T08:46:46.179+00:00"
+  },
+  "statusCode" : "OK",
+  "statusCodeValue" : 200
+}
+2025-05-18 14:16:51 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-18 14:16:51 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-05-18 16:51:04 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 20900 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 16:51:04 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 16:51:04 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 16:51:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 16:51:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 126 ms. Found 3 MongoDB repository interfaces.
+2025-05-18 16:51:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 16:51:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2953 ms
+2025-05-18 16:51:09 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'systemInfoService': Error creating bean with name 'systemInfoService' defined in file [D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes\com\rahulsmgv\geoapp\service\SystemInfoService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-05-18 16:51:09 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-18 16:51:09 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.rahulsmgv.geoapp.service.SystemInfoService required a bean of type 'java.lang.String' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.lang.String' in your configuration.
+
+2025-05-18 16:53:54 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 12280 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 16:53:54 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 16:53:54 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 16:53:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 16:53:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 3 MongoDB repository interfaces.
+2025-05-18 16:53:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 16:53:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1808 ms
+2025-05-18 16:53:57 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'systemInfoService': Error creating bean with name 'systemInfoService' defined in file [D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes\com\rahulsmgv\geoapp\service\SystemInfoService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-05-18 16:53:57 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-18 16:53:57 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.rahulsmgv.geoapp.service.SystemInfoService required a bean of type 'java.lang.String' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.lang.String' in your configuration.
+
+2025-05-18 16:55:27 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 15164 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 16:55:27 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 16:55:27 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 16:55:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 16:55:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 3 MongoDB repository interfaces.
+2025-05-18 16:55:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 16:55:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1739 ms
+2025-05-18 16:55:30 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'systemInfoService': Error creating bean with name 'systemInfoService' defined in file [D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes\com\rahulsmgv\geoapp\service\SystemInfoService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-05-18 16:55:30 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-18 16:55:30 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.rahulsmgv.geoapp.service.SystemInfoService required a bean of type 'java.lang.String' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.lang.String' in your configuration.
+
+2025-05-18 16:58:05 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 3432 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 16:58:05 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 16:58:05 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 16:58:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 16:58:06 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 3 MongoDB repository interfaces.
+2025-05-18 16:58:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 16:58:07 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1751 ms
+2025-05-18 16:58:08 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'systemInfoService': Error creating bean with name 'systemInfoService' defined in file [D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes\com\rahulsmgv\geoapp\service\SystemInfoService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2025-05-18 16:58:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-18 16:58:08 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.rahulsmgv.geoapp.service.SystemInfoService required a bean of type 'java.lang.String' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'java.lang.String' in your configuration.
+
+2025-05-18 17:03:02 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 18596 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 17:03:02 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 17:03:02 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 17:03:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 17:03:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 101 ms. Found 3 MongoDB repository interfaces.
+2025-05-18 17:03:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 17:03:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1863 ms
+2025-05-18 17:03:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-05-18 17:03:06 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Started GeoappApplication in 4.27 seconds (process running for 5.131)
+2025-05-18 17:06:06 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 9440 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 17:06:06 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 17:06:06 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 17:06:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 17:06:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 120 ms. Found 3 MongoDB repository interfaces.
+2025-05-18 17:06:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 17:06:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2393 ms
+2025-05-18 17:07:25 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-05-18 17:07:25 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-18 17:07:25 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-05-18 17:08:19 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - Starting GeoappApplication using Java 17.0.12 with PID 14864 (D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp\target\classes started by rahul in D:\Workspace\SpringBoot\DevUsingSpringBoot\geoapp)
+2025-05-18 17:08:19 [main] DEBUG c.rahulsmgv.geoapp.GeoappApplication - Running with Spring Boot v3.4.4, Spring v6.2.5
+2025-05-18 17:08:19 [main] INFO  c.rahulsmgv.geoapp.GeoappApplication - The following 1 profile is active: "dev"
+2025-05-18 17:08:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-05-18 17:08:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 81 ms. Found 3 MongoDB repository interfaces.
+2025-05-18 17:08:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-18 17:08:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1708 ms
+2025-05-18 17:08:23 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-05-18 17:08:23 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-18 17:08:23 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
